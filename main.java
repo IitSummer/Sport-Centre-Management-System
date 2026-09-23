@@ -43,7 +43,7 @@ public class main {
                 System.out.print("\nEnter Customer Name: ");
                 customerName = input.nextLine();
 
-                System.out.print("\nEnter Customer's Contact Number: ");
+                System.out.print("Enter Customer's Contact Number: ");
                 contactNumber = input.nextLine();
 
                 System.out.print("Enter booking date (dd/MM/yyyy): ");
@@ -56,12 +56,13 @@ public class main {
                 timeFormat = DateTimeFormatter.ofPattern("HH:mm");
                 bookingTime = LocalTime.parse(timeInput, timeFormat);
 
-                System.out.print("\nEnter Number of Participants: ");
+                System.out.print("Enter Number of Participants: ");
                 numberOfParticipants = input.nextInt();
                 input.nextLine();
 
+                System.out.print("\n1. Basketball Court  |   2. Tennis Court");
                 System.out.print("\nEnter Facility Type 1 or 2: ");
-                System.out.print()
+                
                 facilityChoice = input.nextInt();
                 input.nextLine();
                 Facility_Booking.FacilityType facilityType;

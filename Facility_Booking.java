@@ -15,7 +15,7 @@ public class Facility_Booking {
         
     }
 
-    public Facility_Booking(String customerName, String contactNumber, LocalDate bookingDate, LocalTime bookingTime, int numberOfParticipants, FacilityType facilityType){
+    Facility_Booking(String customerName, String contactNumber, LocalDate bookingDate, LocalTime bookingTime, int numberOfParticipants, FacilityType facilityType){
         this.customerName = customerName;
         this.contactNumber = contactNumber;
         this.bookingDate = bookingDate;
