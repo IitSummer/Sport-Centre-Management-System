@@ -3,6 +3,8 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.IOException;
 
 
 public class main {
@@ -12,17 +14,18 @@ public class main {
         Scanner input = new Scanner(System.in);
 
         Facility_Booking_Manager bookingManager = new Facility_Booking_Manager();
+        Rental_Catalogue_Transaction rentalCatalogue = new Rental_Catalogue_Transaction();
 
         // All of main's fields
         int StaffFunctionInput, numberOfParticipants, facilityChoice;
-        String customerName, contactNumber, dateInput, timeInput;
+        String customerName, contactNumber, dateInput, timeInput, catalogue;
         DateTimeFormatter dateFormat, timeFormat;
         
         LocalDate bookingDate;
         LocalTime bookingTime;
 
 
-        // Menu
+        
         System.out.println("\n===== TASTEHUB SYSTEM =====");
         System.out.println("1. Facility Booking Module ");
         System.out.println("2. View Rental Catalogue");
@@ -82,7 +85,39 @@ public class main {
 
 
             case 2:
+                System.out.println(" ");
+                catalogue = rentalCatalogue.viewRentalCatalogue();
+                System.out.println(catalogue);
 
+
+            break;
+
+
+            case 3:
+
+            break;
+
+
+
+            case 4:
+
+            break;
+
+
+
+            case 5:
+
+            break;
+
+
+
+            case 6:
+
+            break;
+
+
+
+            case 7:
 
             break;
 
